@@ -1,0 +1,162 @@
+Pulling details for CVE-2014-9219
+CVE URL: https://access.redhat.com/security/cve/CVE-2014-9219
+Impact: Moderate
+Public: 2014-12-03
+Statement: N/A
+Details: Cross-site scripting (XSS) vulnerability in the redirection feature in url.php in phpMyAdmin 4.2.x before 4.2.13.1 allows remote attackers to inject arbitrary web script or HTML via the url parameter.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2014-9425
+CVE URL: https://access.redhat.com/security/cve/CVE-2014-9425
+Impact: Low
+Public: 2014-12-30
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: Double free vulnerability in the zend_ts_hash_graceful_destroy function in zend_ts_hash.c in the Zend Engine in PHP through 5.5.20 and 5.6.x through 5.6.4 allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2014-9426
+CVE URL: https://access.redhat.com/security/cve/CVE-2014-9426
+Impact: None
+Public: 2014-12-28
+Statement: N/A
+Details: calculate_interest.php dropbox_to_gdrive_delta.sh dropbox_to_gdrive.sh redhat_cve_report.sh DISPUTED calculate_interest.php dropbox_to_gdrive_delta.sh dropbox_to_gdrive.sh redhat_cve_report.sh The apprentice_load function in libmagic/apprentice.c in the Fileinfo component in PHP through 5.6.4 attempts to perform a free operation on a stack-based character array, which allows remote attackers to cause a denial of service (memory corruption or application crash) or possibly have unspecified other impact via unknown vectors. NOTE: this is disputed by the vendor because the standard erealloc behavior makes the free operation unreachable.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2014-9427
+CVE URL: https://access.redhat.com/security/cve/CVE-2014-9427
+Impact: Low
+Public: 2014-12-17
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: sapi/cgi/cgi_main.c in the CGI component in PHP through 5.4.36, 5.5.x through 5.5.20, and 5.6.x through 5.6.4, when mmap is used to read a .php file, does not properly consider the mapping's length during processing of an invalid file that begins with a # character and lacks a newline character, which causes an out-of-bounds read and might (1) allow remote attackers to obtain sensitive information from php-cgi process memory by leveraging the ability to upload a .php file or (2) trigger unexpected code execution if a valid PHP script is present in memory locations adjacent to the mapping.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0204
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0204
+Impact: Low
+Public: 2015-01-06
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: It was discovered that OpenSSL would accept ephemeral RSA keys when using non-export RSA cipher suites. A malicious server could make a TLS/SSL client using OpenSSL use a weaker key exchange method.
+Errata List: 
+Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+Red Hat Enterprise Linux version 7 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0205
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0205
+Impact: Low
+Public: 2015-01-08
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: It was found that an OpenSSL server would, under certain conditions, accept Diffie-Hellman client certificates without the use of a private key. An attacker could use a user's client certificate to authenticate as that user, without needing the private key.
+Errata List: 
+Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+Red Hat Enterprise Linux version 7 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0206
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0206
+Impact: Moderate
+Public: 2015-01-08
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: A memory leak flaw was found in the way the dtls1_buffer_record() function of OpenSSL parsed certain DTLS messages. A remote attacker could send multiple specially crafted DTLS messages to exhaust all available memory of a DTLS server.
+Errata List: 
+Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+Red Hat Enterprise Linux version 7 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0374
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0374
+Impact: Low
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.40 and earlier and 5.6.21 and earlier allows remote authenticated users to affect confidentiality via unknown vectors related to Server : Security : Privileges : Foreign Key.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0381
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0381
+Impact: Moderate
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.40 and earlier and 5.6.21 and earlier allows remote attackers to affect availability via unknown vectors related to Server : Replication, a different vulnerability than CVE-2015-0382.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0382
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0382
+Impact: Moderate
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.40 and earlier and 5.6.21 and earlier allows remote attackers to affect availability via unknown vectors related to Server : Replication, a different vulnerability than CVE-2015-0381.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0385
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0385
+Impact: Low
+Public: 2015-01-21
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: Unspecified vulnerability in Oracle MySQL Server 5.6.21 and earlier allows remote authenticated users to affect availability via unknown vectors related to Pluggable Auth.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0391
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0391
+Impact: Moderate
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.38 and earlier, and 5.6.19 and earlier, allows remote authenticated users to affect availability via vectors related to DDL.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0409
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0409
+Impact: Moderate
+Public: 2015-01-21
+Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Details: Unspecified vulnerability in Oracle MySQL Server 5.6.21 and earlier allows remote authenticated users to affect availability via unknown vectors related to Optimizer.
+Errata List: 
+N/A
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0411
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0411
+Impact: Moderate
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.40 and earlier, and 5.6.21 and earlier, allows remote attackers to affect confidentiality, integrity, and availability via unknown vectors related to Server : Security : Encryption.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
+Pulling details for CVE-2015-0432
+CVE URL: https://access.redhat.com/security/cve/CVE-2015-0432
+Impact: Moderate
+Public: 2015-01-21
+Statement: N/A
+Details: Unspecified vulnerability in Oracle MySQL Server 5.5.40 and earlier allows remote authenticated users to affect availability via vectors related to Server : InnoDB : DDL : Foreign Key.
+Errata List: 
+Red Hat Enterprise Linux version 7 (mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0118.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 6 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mariadb55-mariadb) | https://rhn.redhat.com/errata/RHSA-2015-0117.html | February 03, 2015
+Red Hat Software Collections 1 for Red Hat Enterprise Linux version 7 (mysql55-mysql) | https://rhn.redhat.com/errata/RHSA-2015-0116.html | February 03, 2015
+---------------------------------------------------------------------------------------------------
