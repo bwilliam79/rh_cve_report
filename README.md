@@ -17,3 +17,7 @@ CVE_Report.txt contains a sample report
 
 Version 0.1 - February 19, 2015
 - Initial version
+
+Version 0.1.1 - February 19, 2015
+- Fixed issue where statements weren't being reported correctly
+- Fixed issue where strings with "**" were causing directory information to be printed instead of the asterisk characters themselves
