@@ -11,7 +11,7 @@ Pulling details for CVE-2014-9425
 CVE URL: https://access.redhat.com/security/cve/CVE-2014-9425
 Impact: Low
 Public: 2014-12-30
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue affects the version of php as shipped with Red Hat Enterprise Linux 6. This issue does not affect the version of php and php53 as shipped with Red Hat Enterprise Linux 5. This issue does not affect the version of php as shipped with Red Hat Enterprise Linux 7. Red Hat Product Security has rated this issue as having Low security impact, a future update may address this flaw.
 Details: Double free vulnerability in the zend_ts_hash_graceful_destroy function in zend_ts_hash.c in the Zend Engine in PHP through 5.5.20 and 5.6.x through 5.6.4 allows remote attackers to cause a denial of service or possibly have unspecified other impact via unknown vectors.
 Errata List: 
 N/A
@@ -21,7 +21,7 @@ CVE URL: https://access.redhat.com/security/cve/CVE-2014-9426
 Impact: None
 Public: 2014-12-28
 Statement: N/A
-Details: calculate_interest.php dropbox_to_gdrive_delta.sh dropbox_to_gdrive.sh redhat_cve_report.sh DISPUTED calculate_interest.php dropbox_to_gdrive_delta.sh dropbox_to_gdrive.sh redhat_cve_report.sh The apprentice_load function in libmagic/apprentice.c in the Fileinfo component in PHP through 5.6.4 attempts to perform a free operation on a stack-based character array, which allows remote attackers to cause a denial of service (memory corruption or application crash) or possibly have unspecified other impact via unknown vectors. NOTE: this is disputed by the vendor because the standard erealloc behavior makes the free operation unreachable.
+Details: ** DISPUTED ** The apprentice_load function in libmagic/apprentice.c in the Fileinfo component in PHP through 5.6.4 attempts to perform a free operation on a stack-based character array, which allows remote attackers to cause a denial of service (memory corruption or application crash) or possibly have unspecified other impact via unknown vectors. NOTE: this is disputed by the vendor because the standard erealloc behavior makes the free operation unreachable.
 Errata List: 
 N/A
 ---------------------------------------------------------------------------------------------------
@@ -29,7 +29,9 @@ Pulling details for CVE-2014-9427
 CVE URL: https://access.redhat.com/security/cve/CVE-2014-9427
 Impact: Low
 Public: 2014-12-17
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This flaw requires that a user is able to upload arbitrary PHP code on the system, be a local user able to execute arbitrary PHP code, or have the ability to modify existing PHP code on the system. It also requires that the modified/arbitrary PHP code is executed with the php-cgi program, and the net result is that php-cgi crashes, effectively resulting in a self-denial of service.
+
+Red Hat Product Security has rated this issue as having Low security impact. This issue is not currently planned to be addressed in future updates. For additional information, refer to the Issue Severity Classification: https://access.redhat.com/security/updates/classification/.
 Details: sapi/cgi/cgi_main.c in the CGI component in PHP through 5.4.36, 5.5.x through 5.5.20, and 5.6.x through 5.6.4, when mmap is used to read a .php file, does not properly consider the mapping's length during processing of an invalid file that begins with a # character and lacks a newline character, which causes an out-of-bounds read and might (1) allow remote attackers to obtain sensitive information from php-cgi process memory by leveraging the ability to upload a .php file or (2) trigger unexpected code execution if a valid PHP script is present in memory locations adjacent to the mapping.
 Errata List: 
 N/A
@@ -38,7 +40,9 @@ Pulling details for CVE-2015-0204
 CVE URL: https://access.redhat.com/security/cve/CVE-2015-0204
 Impact: Low
 Public: 2015-01-06
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue affects the version of openssl098e as shipped with Red Hat Enterprise Linux 6 and 7. Red Hat Product Security has rated this issue as having Moderate security impact and does not plan to address this flaw for the above components in any future security updates.
+
+This issue affects the version of openssl and openssl097a as shipped with Red Hat Enterprise Linux 5. Red Hat Enterprise Linux 5 is now in Production 3 Phase of the support and maintenance life cycle. This issue is not currently planned to be addressed in future updates. For additional information, refer to the Red Hat Enterprise Linux Life Cycle: https://access.redhat.com/support/policy/updates/errata/.
 Details: It was discovered that OpenSSL would accept ephemeral RSA keys when using non-export RSA cipher suites. A malicious server could make a TLS/SSL client using OpenSSL use a weaker key exchange method.
 Errata List: 
 Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
@@ -48,7 +52,7 @@ Pulling details for CVE-2015-0205
 CVE URL: https://access.redhat.com/security/cve/CVE-2015-0205
 Impact: Low
 Public: 2015-01-08
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue does not affect the version of openssl and openssl097a as shipped with Red Hat Enterprise Linux 5. This issue does not affect the version of openssl098e as shipped with Red Hat Enterprise Linux 6 and 7.
 Details: It was found that an OpenSSL server would, under certain conditions, accept Diffie-Hellman client certificates without the use of a private key. An attacker could use a user's client certificate to authenticate as that user, without needing the private key.
 Errata List: 
 Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
@@ -58,7 +62,7 @@ Pulling details for CVE-2015-0206
 CVE URL: https://access.redhat.com/security/cve/CVE-2015-0206
 Impact: Moderate
 Public: 2015-01-08
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue does not affect the version of openssl and openssl097a as shipped with Red Hat Enterprise Linux 5. This issue does not affect the version of openssl098e as shipped with Red Hat Enterprise Linux 6 and 7.
 Details: A memory leak flaw was found in the way the dtls1_buffer_record() function of OpenSSL parsed certain DTLS messages. A remote attacker could send multiple specially crafted DTLS messages to exhaust all available memory of a DTLS server.
 Errata List: 
 Red Hat Enterprise Linux version 6 (openssl) | https://rhn.redhat.com/errata/RHSA-2015-0066.html | January 20, 2015
@@ -107,7 +111,7 @@ Pulling details for CVE-2015-0385
 CVE URL: https://access.redhat.com/security/cve/CVE-2015-0385
 Impact: Low
 Public: 2015-01-21
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue did not affect the versions of mysql or mysql55 as shipped with Red Hat Enterprise Linux 5, 6 or 7 as it only affects MySQL 5.6.x which are not shipped with these versions of Red Hat Enterprise Linux.
 Details: Unspecified vulnerability in Oracle MySQL Server 5.6.21 and earlier allows remote authenticated users to affect availability via unknown vectors related to Pluggable Auth.
 Errata List: 
 N/A
@@ -129,7 +133,7 @@ Pulling details for CVE-2015-0409
 CVE URL: https://access.redhat.com/security/cve/CVE-2015-0409
 Impact: Moderate
 Public: 2015-01-21
-Statement: Find out more about Red Hat support for the Common Vulnerability Scoring System (CVSS).
+Statement: This issue did not affect the versions of mysql or mysql55 as shipped with Red Hat Enterprise Linux 5, 6 or 7 as it only affects MySQL 5.6.x which are not shipped with these versions of Red Hat Enterprise Linux.
 Details: Unspecified vulnerability in Oracle MySQL Server 5.6.21 and earlier allows remote authenticated users to affect availability via unknown vectors related to Optimizer.
 Errata List: 
 N/A
