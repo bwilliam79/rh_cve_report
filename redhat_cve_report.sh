@@ -60,7 +60,13 @@ do
         if [[ $CVE_HTML =~ .*"<h2>Statement</h2>".* ]]
         then
             STATEMENT=`echo $CVE_HTML | sed -e 's/^.*<h2>Statement<\/h2>//'`
-            STATEMENT=`echo $STATEMENT | sed -e 's/<h2>CVSS v2 metrics<\/h2>.*//g' | sed -e 's/<br \/>/\n\n/g' | sed -e 's/.*<p>//g' | sed -e 's/<\/p>.*//g' | sed -e 's/<a href=".*">//g' | sed -e 's/<\/a>//g'`
+
+            if [[ $STATEMENT =~ .*"<h2>CVSS v2 metrics</h2>".* ]]
+            then
+                STATEMENT=`echo $STATEMENT | sed -e 's/<h2>CVSS v2 metrics<\/h2>.*//g' | sed -e 's/<br \/>/\n\n/g' | sed -e 's/.*<p>//g' | sed -e 's/<\/p>.*//g' | sed -e 's/<a href=".*">//g' | sed -e 's/<\/a>//g'`
+            else
+                STATEMENT=`echo $STATEMENT | sed -e 's/<h2>Red Hat security errata<\/h2>.*//g' | sed -e 's/<br \/>/\n\n/g' | sed -e 's/.*<p>//g' | sed -e 's/<\/p>.*//g' | sed -e 's/<a href=".*">//g' | sed -e 's/<\/a>//g'`
+            fi
         # Not all CVEs have statements
         else
             STATEMENT="N/A"
